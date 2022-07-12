@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body {
+    background-image: url(https://storage-asset.msi.com/global/picture/wallpaper/wallpaper_162070056595623a083bab267f63254261f1f938e4.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor {
+    height: 100vh;
+    padding: 50px;
+}
+
+.cabeza {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo_1 {
+    letter-spacing: 5px;
+}
+
+.textos {
+    width: 50%;
+    position: relative;
+    right: -50%;
+    top: -20%;  
+}
+
+.textos li {
+    padding: 20px;
+}
+
+.fotos {
+    border: 1px solid #000;
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-img 5s; 
+    animation: cambiar 8s infinite alternate; 
+}
+
+@keyframes cambiar {
+    0% {
+        background-image: url(https://wallpaperslinks.com/wp-content/uploads/2020/03/astronaut-coloured-smoke-4k-eu-1080x1920-1.jpg)
+    }
+
+    50% {
+        background-image: url(https://i.pinimg.com/originals/c2/57/04/c2570492b583d9aab5e12a450bfdd318.jpg);
+    }
+
+    100% {
+        background-image: url(https://wallpaperslinks.com/wp-content/uploads/2020/03/astronaut-alone-in-neon-city-4k-ul-1080x1920-1.jpg);
+    }
+}
+
+.seccion_2 {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_2 {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_2 {
+    letter-spacing: 5px;
+}
+
+.parrafos {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 90px;
+    background-color: #000;
+}
+
+.li_texto li {
+    display: inline-block;
+    margin: 20px;
+    letter-spacing: 3px;
+}
